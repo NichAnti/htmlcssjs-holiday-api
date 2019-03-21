@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+}
+
+.all-page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.month-year {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.calendar {
+  width: 80%;
+  height: 80%;
+  margin: 50px auto;
+}
+
+.calendar::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.cell {
+  position: relative;
+  width: calc(100% / 7);
+  height: calc(100% / 5);
+  float: left;
+  border: 1px solid #cecece;
+}
+
+.holiday {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+}
